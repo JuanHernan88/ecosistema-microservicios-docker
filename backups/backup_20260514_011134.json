@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Medellin",
+        "temperatura": 24.0,
+        "fecha": "2026-05-14 01:11:09"
+    },
+    {
+        "id": 2,
+        "nombre": "Bogota",
+        "temperatura": 18.0,
+        "fecha": "2026-05-14 01:11:09"
+    },
+    {
+        "id": 3,
+        "nombre": "Cali",
+        "temperatura": 30.0,
+        "fecha": "2026-05-14 01:11:09"
+    }
+]

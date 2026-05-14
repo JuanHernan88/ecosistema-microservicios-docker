@@ -40,8 +40,24 @@ services:
     networks:
       - red_microservicios
 
+  worker:
+    build: ./worker
+
+    container_name: worker_backup
+
+    depends_on:
+      - nginx
+
+    volumes:
+      - ./backups:/app/backups
+
+    networks:
+      - red_microservicios
+
 volumes:
   mysql_data:
 
 networks:
   red_microservicios:
+    
+
