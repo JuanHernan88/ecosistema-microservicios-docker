@@ -53,6 +53,26 @@ services:
 
     networks:
       - red_microservicios
+    
+  frontend:
+    build: ./frontend
+
+    container_name: frontend_app
+
+    ports:
+      - "5000:5000"
+
+    depends_on:
+      - nginx
+
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2G
+
+    networks:
+      - red_microservicios
 
 volumes:
   mysql_data:
